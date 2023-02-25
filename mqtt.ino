@@ -9,8 +9,8 @@ void mqtt_publish_pressed(){
   char mqtt_payload[MQTT_MAX_PACKET_SIZE];
   serializeJson(outbound_JSON_message, mqtt_payload, sizeof(mqtt_payload));
 
-  String pressed_topic = iot_kernel.mqtt_base_topic + "/pressed";
+  String topic = iot_kernel.mqtt_base_topic + "/pressed";
 
-  iot_kernel.mqtt.publish(pressed_topic.c_str(), mqtt_payload, MQTT_RETAIN);
+  iot_kernel.mqtt.publish(topic.c_str(), mqtt_payload, MQTT_RETAIN);
   
 }
