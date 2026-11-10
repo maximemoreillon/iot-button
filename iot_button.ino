@@ -13,7 +13,7 @@
 
 // Information to identify the device
 #define DEVICE_TYPE "button"
-#define DEVICE_FIRMWARE_VERSION "0.2.2"
+#define DEVICE_FIRMWARE_VERSION "0.3.0"
 
 // IO
 #define LED_PIN 2
